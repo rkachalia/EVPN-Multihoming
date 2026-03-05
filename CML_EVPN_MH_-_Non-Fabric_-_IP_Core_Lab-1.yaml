@@ -117,8 +117,8 @@ nodes:
   - boot_disk_size: null
     configuration:
       - name: iosxe_config.txt
-        content: "Building configuration...\n\nCurrent configuration : 9265 bytes\n\
-          !\n! Last configuration change at 11:48:22 EST Tue Mar 3 2026\n!\nversion\
+        content: "Building configuration...\n\nCurrent configuration : 9333 bytes\n\
+          !\n! Last configuration change at 07:53:29 EST Thu Mar 5 2026\n!\nversion\
           \ 17.18\nservice nagle\nservice tcp-keepalives-in\nservice tcp-keepalives-out\n\
           service timestamps debug datetime msec localtime show-timezone\nservice\
           \ timestamps log datetime msec localtime show-timezone\nservice password-encryption\n\
@@ -237,8 +237,9 @@ nodes:
           \ ip ospf mtu-ignore\n ip ospf 100 area 0\n carrier-delay msec 0\n hold-queue\
           \ 4094 in\n hold-queue 4094 out\n!\ninterface Vlan1\n no ip address\n shutdown\n\
           !\nrouter ospf 100\n router-id 10.100.255.11\n nsf cisco\n!\nip forward-protocol\
-          \ nd\nip http server\nip http authentication local\nip http secure-server\n\
-          ip ssh bulk-mode 131072\n!\n!\n!\n!\ncontrol-plane\n service-policy input\
+          \ nd\nip tcp mss 8000\nip tcp window-size 262144\nip tcp path-mtu-discovery\n\
+          ip http server\nip http authentication local\nip http secure-server\nip\
+          \ ssh bulk-mode 131072\n!\n!\n!\n!\ncontrol-plane\n service-policy input\
           \ system-cpp-policy\n!\n!\n!\nline con 0\n exec-timeout 0 0\n stopbits 1\n\
           line vty 0 4\n exec-timeout 0 0\n login\n transport input ssh\nline vty\
           \ 5 15\n login\n transport input ssh\n!\n!\n!\n!\n!\n!\nend"
@@ -298,8 +299,8 @@ nodes:
   - boot_disk_size: null
     configuration:
       - name: iosxe_config.txt
-        content: "Building configuration...\n\nCurrent configuration : 9338 bytes\n\
-          !\n! Last configuration change at 11:48:51 EST Tue Mar 3 2026\n!\nversion\
+        content: "Building configuration...\n\nCurrent configuration : 9406 bytes\n\
+          !\n! Last configuration change at 07:53:36 EST Thu Mar 5 2026\n!\nversion\
           \ 17.18\nservice nagle\nservice tcp-keepalives-in\nservice tcp-keepalives-out\n\
           service timestamps debug datetime msec localtime show-timezone\nservice\
           \ timestamps log datetime msec localtime show-timezone\nservice password-encryption\n\
@@ -419,8 +420,9 @@ nodes:
           \ ip ospf mtu-ignore\n ip ospf 100 area 0\n carrier-delay msec 0\n hold-queue\
           \ 4094 in\n hold-queue 4094 out\n!\ninterface Vlan1\n no ip address\n shutdown\n\
           !\nrouter ospf 100\n router-id 10.100.255.12\n nsf cisco\n!\nip forward-protocol\
-          \ nd\nip http server\nip http authentication local\nip http secure-server\n\
-          ip ssh bulk-mode 131072\n!\n!\n!\n!\ncontrol-plane\n service-policy input\
+          \ nd\nip tcp mss 8000\nip tcp window-size 262144\nip tcp path-mtu-discovery\n\
+          ip http server\nip http authentication local\nip http secure-server\nip\
+          \ ssh bulk-mode 131072\n!\n!\n!\n!\ncontrol-plane\n service-policy input\
           \ system-cpp-policy\n!\n!\n!\nline con 0\n exec-timeout 0 0\n stopbits 1\n\
           line vty 0 4\n exec-timeout 0 0\n login\n transport input ssh\nline vty\
           \ 5 15\n login\n transport input ssh\n!\n!\n!\n!\n!\n!\nend"
@@ -575,7 +577,7 @@ nodes:
     configuration:
       - name: iosxe_config.txt
         content: "Building configuration...\n\nCurrent configuration : 8541 bytes\n\
-          !\n! Last configuration change at 11:10:50 EST Tue Mar 3 2026\n!\nversion\
+          !\n! Last configuration change at 07:53:56 EST Thu Mar 5 2026\n!\nversion\
           \ 17.18\nservice nagle\nservice tcp-keepalives-in\nservice tcp-keepalives-out\n\
           service timestamps debug datetime msec localtime show-timezone\nservice\
           \ timestamps log datetime msec localtime show-timezone\nservice password-encryption\n\
@@ -838,8 +840,8 @@ nodes:
   - boot_disk_size: null
     configuration:
       - name: iosxe_config.txt
-        content: "Building configuration...\n\nCurrent configuration : 9057 bytes\n\
-          !\n! Last configuration change at 11:24:45 EST Tue Mar 3 2026\n!\nversion\
+        content: "Building configuration...\n\nCurrent configuration : 9125 bytes\n\
+          !\n! Last configuration change at 07:53:49 EST Thu Mar 5 2026\n!\nversion\
           \ 17.18\nservice nagle\nservice tcp-keepalives-in\nservice tcp-keepalives-out\n\
           service timestamps debug datetime msec localtime show-timezone\nservice\
           \ timestamps log datetime msec localtime show-timezone\nservice password-encryption\n\
@@ -955,8 +957,9 @@ nodes:
           \ 255.255.255.254\n ip ospf network point-to-point\n ip ospf mtu-ignore\n\
           \ ip ospf 100 area 0\n!\ninterface Vlan1\n no ip address\n shutdown\n!\n\
           router ospf 100\n router-id 10.100.255.102\n nsf cisco\n!\nip forward-protocol\
-          \ nd\nip http server\nip http authentication local\nip http secure-server\n\
-          ip ssh bulk-mode 131072\n!\n!\n!\n!\ncontrol-plane\n service-policy input\
+          \ nd\nip tcp mss 8000\nip tcp window-size 262144\nip tcp path-mtu-discovery\n\
+          ip http server\nip http authentication local\nip http secure-server\nip\
+          \ ssh bulk-mode 131072\n!\n!\n!\n!\ncontrol-plane\n service-policy input\
           \ system-cpp-policy\n!\n!\n!\nline con 0\n exec-timeout 0 0\n stopbits 1\n\
           line vty 0 4\n exec-timeout 0 0\n login\n transport input ssh\nline vty\
           \ 5 15\n login\n transport input ssh\n!\n!\n!\n!\n!\n!\nend"
@@ -1110,8 +1113,8 @@ nodes:
   - boot_disk_size: null
     configuration:
       - name: iosxe_config.txt
-        content: "Building configuration...\n\nCurrent configuration : 9182 bytes\n\
-          !\n! Last configuration change at 11:22:35 EST Tue Mar 3 2026\n!\nversion\
+        content: "Building configuration...\n\nCurrent configuration : 9250 bytes\n\
+          !\n! Last configuration change at 07:53:42 EST Thu Mar 5 2026\n!\nversion\
           \ 17.18\nservice nagle\nservice tcp-keepalives-in\nservice tcp-keepalives-out\n\
           service timestamps debug datetime msec localtime show-timezone\nservice\
           \ timestamps log datetime msec localtime show-timezone\nservice password-encryption\n\
@@ -1228,8 +1231,9 @@ nodes:
           \ ip ospf network point-to-point\n ip ospf mtu-ignore\n ip ospf 100 area\
           \ 0\n carrier-delay msec 0\n hold-queue 4094 in\n hold-queue 4094 out\n\
           !\ninterface Vlan1\n no ip address\n shutdown\n!\nrouter ospf 100\n router-id\
-          \ 10.100.255.101\n nsf cisco\n!\nip forward-protocol nd\nip http server\n\
-          ip http authentication local\nip http secure-server\nip ssh bulk-mode 131072\n\
+          \ 10.100.255.101\n nsf cisco\n!\nip forward-protocol nd\nip tcp mss 8000\n\
+          ip tcp window-size 262144\nip tcp path-mtu-discovery\nip http server\nip\
+          \ http authentication local\nip http secure-server\nip ssh bulk-mode 131072\n\
           !\n!\n!\n!\ncontrol-plane\n service-policy input system-cpp-policy\n!\n\
           !\n!\nline con 0\n exec-timeout 0 0\n stopbits 1\nline vty 0 4\n exec-timeout\
           \ 0 0\n login\n transport input ssh\nline vty 5 15\n login\n transport input\
@@ -1385,7 +1389,7 @@ nodes:
     configuration:
       - name: iosxe_config.txt
         content: "Building configuration...\n\nCurrent configuration : 8541 bytes\n\
-          !\n! Last configuration change at 11:14:19 EST Tue Mar 3 2026\n!\nversion\
+          !\n! Last configuration change at 07:54:03 EST Thu Mar 5 2026\n!\nversion\
           \ 17.18\nservice nagle\nservice tcp-keepalives-in\nservice tcp-keepalives-out\n\
           service timestamps debug datetime msec localtime show-timezone\nservice\
           \ timestamps log datetime msec localtime show-timezone\nservice password-encryption\n\
@@ -1756,8 +1760,8 @@ nodes:
   - boot_disk_size: null
     configuration:
       - name: iosxe_config.txt
-        content: "Building configuration...\n\nCurrent configuration : 7286 bytes\n\
-          !\n! Last configuration change at 11:51:52 EST Tue Mar 3 2026\n!\nversion\
+        content: "Building configuration...\n\nCurrent configuration : 7354 bytes\n\
+          !\n! Last configuration change at 07:53:19 EST Thu Mar 5 2026\n!\nversion\
           \ 17.13\nservice nagle\nservice tcp-keepalives-in\nservice tcp-keepalives-out\n\
           service timestamps debug datetime msec localtime show-timezone\nservice\
           \ timestamps log datetime msec localtime show-timezone\nservice password-encryption\n\
@@ -1849,7 +1853,8 @@ nodes:
           \ no ip address\n shutdown\n negotiation auto\n no mop enabled\n no mop\
           \ sysid\n!\ninterface GigabitEthernet4\n no ip address\n shutdown\n negotiation\
           \ auto\n no mop enabled\n no mop sysid\n!\nrouter ospf 100\n router-id 10.100.255.1\n\
-          \ nsf cisco\n!\nip forward-protocol nd\n!\nno ip http server\nip http secure-server\n\
+          \ nsf cisco\n!\nip forward-protocol nd\nip tcp mss 8000\nip tcp window-size\
+          \ 262144\nip tcp path-mtu-discovery\n!\nno ip http server\nip http secure-server\n\
           ip ssh bulk-mode 131072\n!\n!\n!\n!\n!\n!\ncontrol-plane\n!\n!\nmgcp behavior\
           \ rsip-range tgcp-only\nmgcp behavior comedia-role none\nmgcp behavior comedia-check-media-src\
           \ disable\nmgcp behavior comedia-sdp-force disable\n!\nmgcp profile default\n\
